@@ -1,0 +1,26 @@
+# pedra, papel e tesoura
+import random
+print("Bem vindo ao jogo de pedra, papel e tesoura! \nfaça sua escolha e boa sorte!!\n-----------------------------------------")
+print("Se você deseja jogar pedra, digite pedra\nnSe você deseja jogar papel, digite papel \nSe você deseja jogar tesoura, digite tesoura\n-----------------------------------------")
+p = (input("Qual será sua escolha: "))
+x = ["pedra", "papel", "tesoura"]
+v = random.choice(x)
+print(f"A escolha da maquina foi: {v}")
+
+if v == p:
+  print("Houve um empate")
+
+if v == "pedra" and p == "papel":
+  print("Você ganhou!!")
+
+if v == "pedra" and p == "tesoura":
+  print("Você perdeu.")
+
+if v == "papel" and p == "tesoura":
+  print("Você ganhou!!")
+
+if v == "tesoura" and p == "pedra":
+  print("Você ganhou!!")
+
+if v == "papel" and p == "pedra":
+  print("Você perdeu.")
